@@ -1,0 +1,410 @@
+ 
+/* Navbar Section */
+nav {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding:1vw 8vw;
+    align-items: center;
+    padding:1vw 8vw;
+    box-shadow:4px 3px 100px rgba(224, 119, 119, 0.15);
+}
+
+nav img{
+    width:151px;
+    cursor:pointer;
+}
+
+
+nav .navigation ul{
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    margin-left:30px;
+}
+
+nav .navigation ul li a{ 
+    text-decoration: none;
+    color:rgb(11, 65, 158);
+    font-weight: 510;
+    font-size:20px;
+    transition:0.3s ease;
+}
+
+nav .navigation ul li a:hover{
+    color:rgb(153, 176, 37);
+}
+
+
+
+/* Home Section */
+
+#home{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("images/back.jpg");
+    width:100%;
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top:40px;
+}
+
+#home h2{
+    color:white;
+    font-size:2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p{
+    width:50%;
+    color:white;
+    font-size:.9rem;
+    line-height:25px;
+}
+
+#home .btn{
+    padding-top:10px;
+}
+
+
+#home a{
+    text-decoration: none;
+    font-size:0.9rem;
+    padding:13px 35px;
+    background-color:#fff;
+    font-weight: 600;
+    border-radius:5px;
+}
+
+#home a.blue{
+    color:white;
+    background:rgb(59, 59, 213); 
+    transition: 0.3s ease;
+}
+
+#home a.blue:hover{
+    background:white;
+    color:rgb(59, 59, 213); 
+}
+
+#home a.yellow{
+    color:#fff;
+    background:#FDC93B;
+    transition: 0.3 ease;
+}
+
+#home a.yellow:hover{
+    background:#fff;
+    color:rgb(59, 59, 213); 
+}
+
+/* Features Section */
+#features{
+    padding:5vw 8vw 0 8vw;
+    text-align:center;
+}
+
+#features .fea-base{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap:1rem;
+    margin-top:50px;
+}
+
+#features .fea-box {
+    background:rgb(240, 237, 237);
+    text-align:start;
+}
+
+#features .fea-box i {
+    font-size:2.3rem;
+    color:rgb(44,44,80);
+}
+
+#features .fea-box h3{
+    font-size:1.2rem;
+    font-weight:600;
+    color:rgb(46,46,59);
+    padding:13px 0 7px 0; 
+}
+
+#features .fea-box p{
+    font-size:1rem;
+    font-weight:400;
+    color:rgb(46,46,59);
+}
+
+/* Courses Section */
+
+#course {
+    padding:8vw 8vw 0 8vw;
+    text-align:center;
+}
+
+#course .course-box{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-gap:1rem;
+    margin-top:50px;
+}
+
+
+#course .courses{
+    text-align:start;
+    background:white;
+    height:100%;
+    position: relative;
+}
+
+#course .courses img{
+    width:100%;
+    height:60%;
+    background-size: cover;
+    background-position: center;
+}
+
+#course .courses .details{
+    padding:15px 15px 0  15px;
+}
+
+#course .courses .details i{
+    color:#fdc93b;
+    font-size:.9rem;
+}
+
+#course .courses .cost{
+    background-color: rgb(142, 142, 160);
+    color:white;
+    line-height: 71px;
+    width:73px;
+    height: 73px;
+    text-align:center;
+    border-radius:50%;
+    position: absolute;
+    right:14px;
+    bottom:110px;
+}
+
+
+
+/* Registartion Section */
+
+#registration{
+    padding:6vw 8vw 6vw 8vw;
+    background-image:linear-gradient(rgba(99,112,168,0.3), rgba(81,91,233,1)),url("images/signup.jpg");
+    height:100%;
+    width:83%;
+    background-size: cover;
+    background-repeat: center;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+#registration .reminder{
+    color:#fff;
+}
+
+#registration .reminder h1{
+    color:#fff;
+}
+
+
+
+#registration .reminder .time{
+    display:flex;
+    margin-top:40px;
+}
+
+#registration .reminder .time .date{
+    text-align:center;
+    padding:13px  33px;
+    background: rgba(255, 255, 255 , 0.20);
+    backdrop-filter: 30px;
+    box-shadow: 0 8px 32px 0 rgba(31,38,110,70);
+    border-radius:30px;
+    margin:0px 3px 4px 7px;
+    border:1px solid rgba(224, 119, 119, 0.15);
+    font-size:.9rem;
+    font-weight:611;
+}
+
+#registration .form{
+    background:#fff;
+    border-radius:5px;
+    display:flex;
+    flex-direction:column;
+    padding:30px;
+    box-shadow:1px 8px 32px 0 rgb(124, 124, 185);
+}
+
+#registration .form input{
+    margin:15px 0;
+    padding:10px 13px;
+    border:1px solid  rgb(93, 93, 140);
+    outline:none;
+}
+
+#registration .form input::placeholder{
+    color:black;
+    font-weight:500;
+    font-size:0.9rem;
+
+}
+
+#registration .form .btn{
+    margin:19px;
+}
+
+
+#registration .form a.yellow{
+    text-decoration:none;
+    font-size:1.1rem;
+    padding:13px 30px;
+    background-color:#FDC93B;
+    font-weight:600;
+    border-radius:5px;
+    color:#fff;
+    margin:10px;
+    transition:0.3s ease
+}
+
+#experts{
+    padding:8vw 8vw 0 8vw;
+    text-align:center;
+}
+
+#experts .expert-box{
+    display:grid;
+    grid-gap:1rem;
+    margin-top:50px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+#experts .expert-box .profiles{
+    background:#eeebeb;
+    padding:30px 10px;
+}
+
+
+#experts .expert-box .profiles .pro-links{
+    margin-top:10px;
+}
+
+.pro-links  i{
+    padding:10px 13px;
+    border:1px solid rgb(21,21,100);
+    color:#121111;
+    cursor:pointer;
+}
+
+footer{
+    padding:2vw;
+    background-color: #2f2121;
+    display:flex;    
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap:wrap;
+}
+
+footer .footer-col{
+    padding-bottom:40px;
+}
+
+footer h3{
+    color:rgb(241,240,245);
+    font-weight:600;
+    padding-bottom:20px;
+}
+
+footer li{
+    list-style:none;
+    color:#7b838a;
+    padding:10px 1px;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.3s ease;
+
+}
+footer li:hover{
+    color:rgb(240,240,90);
+}
+
+footer p{
+    color:rgb(105, 104, 104);   
+}
+
+footer  .subscribe{
+    margin-top:20px;
+}
+
+footer input{
+    width:150px;
+    padding:15px 10px;
+    background:#4c526a;
+    border:none;
+    outline:none;
+    color:#fff;
+}
+
+
+footer .subscribe a{
+    text-decoration:none;
+    font-size:0.9rem;
+    padding:12px 15px;
+    background-color:#fff;
+    font-weight:500;
+}
+footer .subscribe a.yellow{
+    background: yellow;
+    transition:0.3s ease;
+}
+
+footer .subscribe a.yellow:hover{
+    color:rgb(48, 48, 177);
+    background:#26f237;    
+}
+
+
+footer .copyright{
+    display:flex;
+    margin-top:20px;
+    justify-content: space-between;
+    align-items:center;
+    width:100%;
+}
+
+footer .pro-links{
+    margin-top:0px;
+}
+
+footer .pro-links  i{
+    background-color:#5f7185;
+    color:white;
+
+}
+footer .pro-links  i:hover{
+    background-color:#FDC93B;
+    color:rgb(116, 25, 18);
+}
+
+footer .copyright p{
+    color:white;
+
+}
+
+
+
+
+
+
+
+
